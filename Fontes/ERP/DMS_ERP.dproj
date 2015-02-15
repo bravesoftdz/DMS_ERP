@@ -1,0 +1,356 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2BEB41DC-DF68-41BE-AF21-73580C79AA70}</ProjectGuid>
+        <ProjectVersion>15.4</ProjectVersion>
+        <FrameworkType>VCL</FrameworkType>
+        <MainSource>DMS_ERP.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>DMS_ERP</SanitizedProjectName>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_UsePackage>frxADO20;frxe20;JvBDE;JvGlobus;JvMM;ACBr_Convenio115;JvManagedThreads;FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;ACBrDiversos;ACBrTCP;FireDACPgDriver;ACBr_GNRE;fmx;JvDlgs;IndySystem;JvCrypt;TeeDB;tethering;inetdbbde;vclib;DBXInterBaseDriver;DataSnapClient;DataSnapServer;DataSnapCommon;ACBrGNREGuiaFRpkg;JvNet;DataSnapProviderClient;JvDotNetCtrls;DBXSybaseASEDriver;DbxCommonDriver;crcontrols200;vclimg;dbxcds;fsBDE20;DatasnapConnectorsFreePascal;MetropolisUILiveTile;JvXPCtrls;vcldb;vcldsnap;fmxFireDAC;dacvcl200;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;JvCore;vclribbon;ACBr_SPED;dsnap;IndyIPServer;ACBr_MDFe;fmxase;vcl;IndyCore;dacfmx200;DBXMSSQLDriver;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;CodeSiteExpressPkg;ACBr_Boleto;ACBr_NFe2;DataSnapFireDAC;FireDACDBXDriver;ACBr_Sintegra;JvAppFrm;soapserver;JvDB;JvRuntimeDesign;ACBr_SAT;inetdbxpress;fsTee20;frxTee20;ACBr_NFSe;dsnapxml;FireDACInfxDriver;FireDACDb2Driver;JclDeveloperTools;ACBr_LFD;JvDocking;adortl;frxDB20;JvWizards;FireDACASADriver;JvHMI;ACBr_SEF2;ACBrOpenSSL;bindcompfmx;frx20;fsADO20;vcldbx;JvBands;FireDACODBCDriver;RESTBackendComponents;ACBr_PAF;ACBrCapicom;rtl;dbrtl;DbxClientDriver;ACBrSerial;FireDACCommon;bindcomp;inetdb;ACBr_BoletoFC_FR;JvPluginSystem;dac200;Tee;JclContainers;DBXOdbcDriver;ACBr_CTe;JvCmp;vclFireDAC;frxDBX20;JvSystem;xmlrtl;DataSnapNativeClient;svnui;ibxpress;JvControls;JvTimeFramework;IndyProtocols;DBXMySQLDriver;FireDACCommonDriver;frxBDE20;bindcompdbx;bindengine;vclactnband;soaprtl;FMXTee;TeeUI;bindcompvcl;JvStdCtrls;JvCustom;unidacvcl200;vclie;Jcl;JvJans;JvPageComps;unidacfmx200;FireDACADSDriver;vcltouch;JvPrintPreview;ACBrComum;unidac200;synapse;ACBr_TEFD;ACBrNFeDanfeRV;ACBrNFSeDanfseFRpkg;VclSmp;FireDACMSSQLDriver;FireDAC;DBXInformixDriver;VCLRESTComponents;Intraweb;DataSnapConnectors;DataSnapServerMidas;dsnapcon;DBXFirebirdDriver;fsDB20;inet;PCN2;fmxobj;ACBrNFeDanfeFRpkg;JclVcl;JvPascalInterpreter;FireDACMySQLDriver;soapmidas;vclx;ACBr_SAT_Extrato_ESCPOS;fs20;ACBrMDFeDAMDFEFRpkg;svn;DBXSybaseASADriver;FireDACOracleDriver;fmxdae;RESTComponents;bdertl;ACBrCTeDacteFRpkg;FireDACMSAccDriver;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;FireDACPgDriver;fmx;IndySystem;TeeDB;tethering;vclib;DBXInterBaseDriver;DataSnapClient;DataSnapServer;DataSnapCommon;DataSnapProviderClient;DBXSybaseASEDriver;DbxCommonDriver;vclimg;dbxcds;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vcldb;vcldsnap;fmxFireDAC;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;dsnap;IndyIPServer;fmxase;vcl;IndyCore;DBXMSSQLDriver;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;inetdbxpress;dsnapxml;FireDACInfxDriver;FireDACDb2Driver;adortl;FireDACASADriver;bindcompfmx;FireDACODBCDriver;RESTBackendComponents;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;inetdb;Tee;DBXOdbcDriver;vclFireDAC;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;DBXMySQLDriver;FireDACCommonDriver;bindcompdbx;bindengine;vclactnband;soaprtl;FMXTee;TeeUI;bindcompvcl;vclie;FireDACADSDriver;vcltouch;VclSmp;FireDACMSSQLDriver;FireDAC;DBXInformixDriver;VCLRESTComponents;Intraweb;DataSnapConnectors;DataSnapServerMidas;dsnapcon;DBXFirebirdDriver;inet;fmxobj;FireDACMySQLDriver;soapmidas;vclx;DBXSybaseASADriver;FireDACOracleDriver;fmxdae;RESTComponents;FireDACMSAccDriver;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_ExeOutput>C:\Dms_Erp\</DCC_ExeOutput>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="UCadPadrao.pas">
+            <Form>FrmCadPadrao</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UCadPadraoMestreDetalhe.pas">
+            <Form>FrmCadPadraoMestreDet</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UConsGen.pas"/>
+        <DCCReference Include="UConsPadrao.pas">
+            <Form>FrmConsPadrao</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UInputBox.pas">
+            <Form>FrmInputBox</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="ULogin.pas">
+            <Form>FrmLogin</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UMain.pas">
+            <Form>FrmMain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UModuloPrincipal.pas">
+            <Form>ModuloPrincipal</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UModuloRelatorios.pas">
+            <Form>ModuloRelatorios</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Empresa\UCadEmpresas.pas">
+            <Form>FrmCadEmpresas</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Empresa\UModuloEmpresas.pas">
+            <Form>ModuloEmpresas</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Estoque\UCadFamiliaProdutos.pas">
+            <Form>FrmCadFamiliaProdutos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Estoque\UCadGruposProd.pas">
+            <Form>FrmCadGrupos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Estoque\UCadSubGrupo.pas">
+            <Form>FrmCadSubGrupo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Estoque\UModuloEstoques.pas">
+            <Form>ModuloEstoques</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Financeiro\UcadBancos.pas">
+            <Form>FrmCadBancos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Financeiro\UCadContasPagarReceber.pas">
+            <Form>FrmCadTiposContasPagarReceber</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Financeiro\UCadTipoCtaPagRec.pas">
+            <Form>FrmCadTipoPagRec</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Financeiro\UModuloFinanceiro.pas">
+            <Form>ModuloFinanceiro</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Fiscal\UCadCfops.pas">
+            <Form>FrmCad_Cfop</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Fiscal\UCadImposto.pas">
+            <Form>FrmCadImposto</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Fiscal\UCadImpostos_Sit_Trib.pas">
+            <Form>FrmCadImpostos_Sit_Trib</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Fiscal\UCadRegimes_tributarios.pas">
+            <Form>FrmCadRegimesTributarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Fiscal\UmoduloFiscal.pas">
+            <Form>ModuloFiscal</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Localidades\UCadCeps.pas">
+            <Form>FrmCadCeps</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Localidades\UCadCidades.pas">
+            <Form>FrmCadCidades</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Localidades\UCadEstados.pas">
+            <Form>FrmCadEstados</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Localidades\UCadPaises.pas">
+            <Form>FrmCadPaises</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Localidades\UConsCidades.pas">
+            <Form>FrmConsCidades</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Localidades\UModuloLocalidades.pas">
+            <Form>ModuloLocalidades</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="OS\UCadTipos_OS.pas">
+            <Form>FrmCadTipos_OS</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OS\UcadTiposAtendimentos.pas">
+            <Form>FrmCadTiposAtendimentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OS\UModuloOrdemServico.pas">
+            <Form>Modulo_Ordem_servico</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Parceiros\UCadTipoEndereco.pas">
+            <Form>FrmCadTipoEndereco</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Parceiros\UcadTipoParceiros.pas">
+            <Form>FrmCadTipoParceiros</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Parceiros\UmoduloParceiros.pas">
+            <Form>ModuloParceiros</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Sistema\UAcesso.pas"/>
+        <DCCReference Include="Sistema\UAltera_BD_Campos.pas"/>
+        <DCCReference Include="Sistema\UAltera_BD_Tabelas.pas"/>
+        <DCCReference Include="Sistema\UArquivoIni.pas">
+            <Form>FArquivoIni</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UAutoriza.pas">
+            <Form>FrmAutoriza</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadDepto.pas">
+            <Form>FrmCadDeptos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadDicionarioDados.pas">
+            <Form>FrmCadDicionarioDados</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadParametrosSistema.pas">
+            <Form>FrmCadParamSis</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadPerfil.pas">
+            <Form>FrmCadPerfil</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadPermissoes.pas">
+            <Form>FrmCadPermissoes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UCadUsuarios.pas">
+            <Form>FrmCadUsuarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UExecSQL.pas">
+            <Form>FrmexecSQL</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Sistema\UModuloAcesso.pas">
+            <Form>ModuloAcesso</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Sistema\UModuloSistema.pas">
+            <Form>ModuloSistema</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Sistema\UTrocaSenha.pas">
+            <Form>FrmTrocaSenha</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UCadCondPagamentos.pas">
+            <Form>FrmCadCondPagtos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UCadPrazoPagamentos.pas">
+            <Form>FrmCadPrazoPagamentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UCadTipoPagamentos.pas">
+            <Form>FrmCadTipoPagamentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UCadTiposTroca.pas">
+            <Form>FrmCadTiposTroca</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UCadTiposVendas.pas">
+            <Form>FrmCadTiposVendas</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Vendas\UModuloVendas.pas">
+            <Form>ModuloVendas</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">DMS_ERP.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k200.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp200.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k200.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp200.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReports\FastReport 4\LibD20\dclfsibx20.bpl">FastScript 1.9 IBX Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReports\FastReport 4\LibD20\dclfrxibx20.bpl">FastReport 4.0 IBX Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Deployment/>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

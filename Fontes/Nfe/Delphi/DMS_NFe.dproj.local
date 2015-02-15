@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/07/21 08:51:24.000.130,=C:\Users\niko\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/21 08:53:52.000.881,=C:\Users\niko\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/21 09:16:48.000.735,=C:\Users\niko\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/21 09:17:03.000.269,=C:\Users\niko\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/07/29 14:36:57.000.375,=C:\Users\niko\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/29 14:37:32.000.433,C:\Users\niko\Documents\RAD Studio\Projects\Unit1.dfm=E:\Sistema_basico\Nfe\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2014/07/29 14:37:32.000.433,C:\Users\niko\Documents\RAD Studio\Projects\Unit1.pas=E:\Sistema_basico\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2014/07/29 14:37:52.000.380,C:\Users\niko\Documents\RAD Studio\Projects\Project1.dproj=E:\Sistema_basico\Nfe\Delphi\DMS_NFe.dproj</Transaction>
+    <Transaction>2014/07/29 14:38:24.000.860,=E:\Sistema_basico\Nfe\Delphi\Umenu.pas</Transaction>
+    <Transaction>2014/07/29 18:29:15.000.464,=E:\Sistema_basico\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2014/07/29 18:32:06.000.881,E:\Sistema_basico\Nfe\Delphi\Unit1.dfm=E:\Sistema_basico\Nfe\Delphi\UDM.dfm</Transaction>
+    <Transaction>2014/07/29 18:32:06.000.881,E:\Sistema_basico\Nfe\Delphi\Unit1.pas=E:\Sistema_basico\Nfe\Delphi\UDM.pas</Transaction>
+    <Transaction>2014/08/04 15:40:57.000.041,=E:\Sistema_basico\Nfe\Delphi\UModuloPrincipal.pas</Transaction>
+    <Transaction>2014/08/04 15:41:33.000.712,=E:\Sistema_basico\Classes\UClsEmpresas.pas</Transaction>
+    <Transaction>2014/08/04 15:41:59.000.811,E:\Sistema_basico\Classes\UClsEmpresas.pas=</Transaction>
+    <Transaction>2014/08/04 15:45:32.000.330,=E:\Sistema_basico\Nfe\Delphi\UArquivoIni.pas</Transaction>
+    <Transaction>2014/09/24 10:22:26.000.951,=E:\Sistema_basico1\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2014/09/24 10:42:24.000.303,=E:\Sistema_basico1\Nfe\Delphi\UCadPadrao.pas</Transaction>
+    <Transaction>2015/01/21 19:19:55.000.548,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UCadEmpresas.pas</Transaction>
+    <Transaction>2015/01/21 19:21:34.000.211,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UModuloEmpresas.pas</Transaction>
+    <Transaction>2015/01/21 19:26:57.000.068,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UConsPadrao.pas</Transaction>
+    <Transaction>2015/01/21 19:27:13.000.401,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UConsCidades.pas</Transaction>
+    <Transaction>2015/01/21 19:27:13.000.785,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UConsGen.pas</Transaction>
+    <Transaction>2015/01/21 19:27:14.000.001,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UModuloLocalidades.pas</Transaction>
+    <Transaction>2015/01/25 14:14:33.000.066,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2015/01/25 14:19:53.000.914,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UCadPaises.pas</Transaction>
+    <Transaction>2015/01/25 14:19:53.000.366,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UCadCidades.pas</Transaction>
+    <Transaction>2015/01/25 14:19:53.000.654,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UCadEstados.pas</Transaction>
+    <Transaction>2015/01/25 15:02:01.000.397,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2015/01/25 15:02:37.000.746,E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\ULogs.dfm=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2015/01/25 15:02:37.000.746,E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\ULogs.pas=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2015/01/25 15:03:03.000.735,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2015/01/25 15:04:08.000.164,E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UMonitor.dfm=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2015/01/25 15:04:08.000.164,E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UMonitor.pas=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\Unit1.pas</Transaction>
+    <Transaction>2015/01/26 13:53:51.000.262,=E:\Google Drive\DMS_SB_ERP\Nfe\Delphi\UInfoEmpresaSEFAZ.pas</Transaction>
+  </Transactions>
+</BorlandProject>
