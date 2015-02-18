@@ -11,6 +11,7 @@ type
     Crud_regimes_tributarios: TUniQuery;
     Crud_Sit_Trib: TUniQuery;
     Crud_Cfop: TUniQuery;
+    CRUD_Regras_impostos: TUniQuery;
   private
     { Private declarations }
   public

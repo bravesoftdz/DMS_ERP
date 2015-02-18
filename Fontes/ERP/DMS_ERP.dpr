@@ -58,7 +58,8 @@ uses
   UCadTipoPagamentos in 'Vendas\UCadTipoPagamentos.pas' {FrmCadTipoPagamentos},
   UCadTiposTroca in 'Vendas\UCadTiposTroca.pas' {FrmCadTiposTroca},
   UCadTiposVendas in 'Vendas\UCadTiposVendas.pas' {FrmCadTiposVendas},
-  UModuloVendas in 'Vendas\UModuloVendas.pas' {ModuloVendas: TDataModule};
+  UModuloVendas in 'Vendas\UModuloVendas.pas' {ModuloVendas: TDataModule},
+  UCadRegrasImpostos in 'Fiscal\UCadRegrasImpostos.pas' {FrmCadPadrao1};
 
 {$R *.res}
 
@@ -77,5 +78,6 @@ begin
   Application.CreateForm(TModuloParceiros, ModuloParceiros);
   Application.CreateForm(TModuloVendas, ModuloVendas);
   Application.CreateForm(TModuloLocalidades, ModuloLocalidades);
+  Application.CreateForm(TFrmCadPadrao1, FrmCadPadrao1);
   Application.Run;
 end.

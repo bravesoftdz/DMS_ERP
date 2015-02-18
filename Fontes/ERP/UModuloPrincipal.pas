@@ -482,11 +482,11 @@ begin
      //   ConfiguraComponenteNFE;
 
         ModuloPrincipal.PreparaTransacao;
-        PrecisaAtualizarBanco;
+
         CriaCampos;
         CriaTabelas;
         Atualiza_Dicionario;
-
+        PrecisaAtualizarBanco;
         CriaDiretorios;
         ModuloPrincipal.EfetivaTransacao;
 
